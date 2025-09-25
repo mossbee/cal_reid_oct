@@ -242,7 +242,7 @@ def do_train(
             ))
 
             # Save best by ACC
-            if metrics['ACC'] > best_acc['value']:
+            if metrics['ACC'] >= best_acc['value']:
                 best_acc['value'] = metrics['ACC']
                 best_path = os.path.join(output_dir, '{}_best_acc.pth'.format(cfg.MODEL.NAME))
                 torch.save({'epoch': epoch, 'state_dict': model.state_dict(), 'acc': best_acc['value']}, best_path)
