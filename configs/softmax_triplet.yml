@@ -45,7 +45,7 @@ SOLVER:
 
 
 TEST:
-  IMS_PER_BATCH: 512
+  IMS_PER_BATCH: 128
   RE_RANK: False
   WEIGHT: "path"
   PAIRS_FILE: '/kaggle/input/nd-twin-256/test_pairs.txt'  # set to pairs file path to enable verification eval
