@@ -1,6 +1,6 @@
 MODEL:
   NAME: 'resnet50' # 'resnet50' 'seresnet50' 'densenet169'
-  PRETRAIN_PATH: 'your_path/.torch/models/resnet50-19c8e357.pth' # pretrained resnest50 model; change it to your path
+  PRETRAIN_PATH: '/kaggle/input/resnet50-19c8e357.pth' # pretrained resnest50 model; change it to your path
   # PRETRAIN_PATH_SE: '/home/cgy/.torch/models/seresnet50-60a8950a85b2b.pkl'
   # PRETRAIN_PATH_DENSE: '/home/cgy/.torch/models/densenet169-b2777c0a.pth'
   CAL: True
@@ -14,8 +14,8 @@ INPUT:
 
 DATASETS:
   NAMES: ('list_reid') # custom list-based dataset for training
-  IMAGE_ROOT: '/absolute/path/to/images_root'
-  TRAIN_LIST: '/absolute/path/to/train_reid.txt'
+  IMAGE_ROOT: '/kaggle/input/ND_TWIN_256'
+  TRAIN_LIST: '/kaggle/input/train_reid.txt'
 
 DATALOADER:
   SAMPLER: 'softmax_triplet'
@@ -48,6 +48,6 @@ TEST:
   IMS_PER_BATCH: 512
   RE_RANK: False
   WEIGHT: "path"
-  PAIRS_FILE: ""  # set to pairs file path to enable verification eval
+  PAIRS_FILE: '/kaggle/input/test_pairs.txt'  # set to pairs file path to enable verification eval
 
-OUTPUT_DIR: "your_path/checkpoint/name_to_save"
+OUTPUT_DIR: "checkpoint/ndtwin"
