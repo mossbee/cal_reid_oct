@@ -1,6 +1,6 @@
 MODEL:
   NAME: 'resnet50' # 'resnet50' 'seresnet50' 'densenet169'
-  PRETRAIN_PATH: '/kaggle/input/resnet50-19c8e357.pth' # pretrained resnest50 model; change it to your path
+  PRETRAIN_PATH: '/kaggle/input/nd-twin-256/resnet50-19c8e357.pth' # pretrained resnest50 model; change it to your path
   # PRETRAIN_PATH_SE: '/home/cgy/.torch/models/seresnet50-60a8950a85b2b.pkl'
   # PRETRAIN_PATH_DENSE: '/home/cgy/.torch/models/densenet169-b2777c0a.pth'
   CAL: True
@@ -48,6 +48,6 @@ TEST:
   IMS_PER_BATCH: 512
   RE_RANK: False
   WEIGHT: "path"
-  PAIRS_FILE: '/kaggle/input/test_pairs.txt'  # set to pairs file path to enable verification eval
+  PAIRS_FILE: '/kaggle/input/nd-twin-256/test_pairs.txt'  # set to pairs file path to enable verification eval
 
 OUTPUT_DIR: "checkpoint/ndtwin"
