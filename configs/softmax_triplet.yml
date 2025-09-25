@@ -15,7 +15,7 @@ INPUT:
 DATASETS:
   NAMES: ('list_reid') # custom list-based dataset for training
   IMAGE_ROOT: '/kaggle/input/ND_TWIN_256'
-  TRAIN_LIST: '/kaggle/input/train_reid.txt'
+  TRAIN_LIST: '/kaggle/input/nd-twin-256/train_reid.txt'
 
 DATALOADER:
   SAMPLER: 'softmax_triplet'
