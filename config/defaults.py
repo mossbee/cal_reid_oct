@@ -47,6 +47,8 @@ _C.INPUT.PADDING = 10
 _C.DATASETS = CN()
 # List of the dataset names for training, as present in paths_catalog.py
 _C.DATASETS.NAMES = ('market1501')
+_C.DATASETS.IMAGE_ROOT = ''
+_C.DATASETS.TRAIN_LIST = ''
 
 # -----------------------------------------------------------------------------
 # DataLoader
@@ -108,6 +110,7 @@ _C.TEST = CN()
 _C.TEST.IMS_PER_BATCH = 128
 _C.TEST.RE_RANK = False
 _C.TEST.WEIGHT = ""
+_C.TEST.PAIRS_FILE = ""
 
 # ---------------------------------------------------------------------------- #
 # Misc options
